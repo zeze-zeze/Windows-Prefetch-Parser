@@ -339,7 +339,7 @@ class Prefetch(object):
             print("Last Executed:")
             for timestamp in self.timestamps:
                 print("    " + timestamp)
-        else:
+        elif len(self.timestamps) == 1:
             print("Last Executed: {}".format(self.timestamps[0]))
         
         print("\nVolume Information:")
